@@ -21,7 +21,7 @@
     .header-content {
       display: flex;
       align-items: center;
-      justify-content: center; /* Center everything horizontally */
+      justify-content: center;
       gap: 1rem;
     }
 
@@ -68,6 +68,12 @@
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .tour:hover {
+      transform: scale(1.03);
     }
 
     .tour h3 {
@@ -100,21 +106,19 @@
       margin-top: 2rem;
     }
 
-  a {
-    color: #d6b36a;
-    text-decoration: none;
-  }
+    a {
+      color: #d6b36a;
+      text-decoration: none;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="header-content">
-
-      <!-- Title on the right -->
       <div class="title-text">
         <h1>Kaiser Bites</h1>
         <p>Delicious Food Tours in the Heart of Vienna</p>
@@ -136,21 +140,22 @@
   <section class="section">
     <h2>Our Tours</h2>
     <div class="tours">
-      <div class="tour">
+      <a class="tour" href="subpages/breakfast.html">
         <h3>Breakfast Tour</h3>
-        <p><strong>Price:</strong> €120 per person</p>
         <p>A relaxed morning walk with coffee, pastries, and hidden gems of the old city from 10 am to 12 pm.</p>
-      </div>
-      <div class="tour">
+      </a>
+      <a class="tour" href="subpages/lunch.html">
         <h3>Lunch Tour</h3>
-        <p><strong>Price:</strong> €120 per person</p>
-        <p>Traditional dishes, hearty servings, and stories from the culinary past of Vienna. From 1 pm to 3 pm. </p>
-      </div>
-      <div class="tour">
+        <p>Traditional dishes, hearty servings, and stories from the culinary past of Vienna. From 1 pm to 3 pm.</p>
+      </a>
+      <a class="tour" href="subpages/dinner.html">
         <h3>Dinner Tour</h3>
-        <p><strong>Price:</strong> €120 per person</p>
         <p>Evening atmosphere, candlelight taverns, and full plates of pure Austrian comfort. From 6 pm to 8 pm.</p>
-      </div>
+      </a>
+      <a class="tour" href="subpages/private.html">
+        <h3>Private Tour</h3>
+        <p>A fully customizable experience – perfect for families, couples, or small groups. Choose your own route, time, and culinary highlights. We take care of the rest.</p>
+      </a>
     </div>
   </section>
 
@@ -160,13 +165,13 @@
       <img src="images/image1.jpg" alt="Happy guests enjoying food" />
       <img src="images/image2.jpg" alt="Traditional Viennese dish" />
       <img src="images/image3.jpg" alt="Walking through the market" />
-      <!-- Add more images as needed -->
     </div>
   </section>
 
   <footer>
     <p>© 2025 Kaiser Bites · All rights reserved · Vienna, Austria</p>
   </footer>
+
   <section class="section">
     <h2>Contact</h2>
     <p><strong>Phone:</strong> <a href="tel:+4367763059873">+43 123 456789</a></p>
