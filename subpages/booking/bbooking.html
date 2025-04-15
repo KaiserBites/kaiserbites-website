@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Breakfast Tour – Kaiser Bites</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background-color: #fdf6ec;
+      color: #3a3a3a;
+    }
+
+    header {
+      background-color: #d6b36a;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+      font-size: 2rem;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #d6b36a;
+      margin-bottom: 0.5rem;
+    }
+
+    .section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #d6b36a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: #d6b36a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #d6b36a;
+  text-decoration: none;
+    }
+
+    .back-link:hover {
+  text-decoration: underline;
+    }
+
+    form {
+  max-width: 500px;
+  margin-top: 1rem;
+    }
+
+    input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+    }
+
+button {
+  background-color: #d6b36a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b89553;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Book Your Breakfast Tour</h1>
+  </header>
+
+  <section class="section">
+    <h2>Let’s Get You Booked!</h2>
+    <p>
+      Use the form below to book your spot on our Breakfast Tour. <br />
+      Please note:
+    </p>
+    <ul>
+      <li>All bookings must be made at least <strong>24 hours in advance</strong>.</li>
+      <li>Each tour is limited to <strong>8 guests</strong>. For larger groups, please <a href="mailto:kaiserbitesvienna@gmail.com">contact us directly</a>.</li>
+      <li>Payment is required to confirm your spot – you'll be redirected to a secure checkout.</li>
+    </ul>
+    <a href="../index.html" class="back-link">← Back to Main Page</a>
+  </section>
+  <section class="section">
+    <h2>Reservation Details</h2>
+    <form>
+      <label for="date">Select a date *</label><br />
+      <input type="date" id="date" name="date" required /><br /><br />
+  
+      <label for="time">Select time *</label><br />
+      <select id="time" name="time" required>
+        <option value="10:00">Breakfast (10:00 AM)</option>
+        <option value="14:00">Lunch (2:00 PM)</option>
+        <option value="18:00">Dinner (6:00 PM)</option>
+      </select><br /><br />
+  
+      <label for="people">Number of people *</label><br />
+      <input type="number" id="people" name="people" min="1" max="8" value="1" required /><br />
+      <small>If you are booking for more than 8 people, please <a href="mailto:kaiserbitesvienna@gmail.com">contact us directly</a>.</small><br /><br />
+  
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+  
+  
