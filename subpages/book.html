@@ -1,1 +1,211 @@
-<h>book here</h>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Tour – Kaiser Bites</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background-color: #fdf6ec;
+      color: #3a3a3a;
+    }
+
+    header {
+      background-color: #d6b36a;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .hero {
+      background-image: url('../images/breakfast-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #d6b36a;
+      border-bottom: 1px solid #d6b36a;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      background-color: #fff3d6;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .book-button {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .book-button a {
+      background-color: #d6b36a;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-button a:hover {
+      background-color: #b89553;
+    }
+
+    footer {
+      background-color: #d6b36a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .tour-section {
+      border-top: 3px solid #d6b36a;
+      margin-top: 3rem;
+      padding-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book a Tour</h1>
+  </header>
+
+  <div class="hero"></div>
+
+  <main>
+    <!-- Breakfast Tour -->
+    <section class="section tour-section">
+      <h2>Breakfast Tour</h2>
+      <p>Start your day like royalty with a delightful morning tour through Vienna’s breakfast traditions. You’ll experience:</p>
+      <ul>
+        <li><strong>Welcome treat:</strong> A buttery croissant with Viennese coffee</li>
+        <li><strong>Main course:</strong> Traditional warm egg dish at a historic café</li>
+        <li><strong>Bite:</strong> A savory pastry or open-faced sandwich at a market stand</li>
+        <li><strong>Dessert:</strong> Classic Apfelstrudel with vanilla sauce</li>
+        <li><strong>Beverages:</strong> Local wine or craft beer included along the way</li>
+      </ul>
+      <div class="price"><strong>Price:</strong> €120 per person</div>
+      <div class="book-button">
+        <a href="booking/bbooking.html" target="_blank">Book This Tour</a>
+      </div>
+      <div class="gallery">
+        <img src="../images/breakfast1.jpg" alt="Fresh croissant and coffee">
+        <img src="../images/breakfast2.jpg" alt="Eggs and toast at a Viennese café">
+        <img src="../images/breakfast3.jpg" alt="Apfelstrudel with vanilla sauce">
+      </div>
+    </section>
+
+    <!-- Streetfood Tour -->
+    <section class="section tour-section">
+      <h2>Streetfood Tour</h2>
+      <p>Vienna has a rich streetfood tradition with over 200 sausage stands, one of which is even a UNESCO world heritage site. You’ll experience:</p>
+      <ul>
+        <li><strong>Welcome treat:</strong> Punschkrapfen</li>
+        <li><strong>Käsekrainer:</strong> The Käsekrainer is the most trending sausage for locals. Filled with little pockets of cheese and sizzled for hours.</li>
+        <li><strong>Käseleberkäse:</strong> Neither Käse nor Leber, this baked meatloaf with melting cheese cubes is a Viennese street food classic.</li>
+        <li><strong>Dessert:</strong> Classic Apfelstrudel with whipped cream</li>
+        <li><strong>Beverages:</strong> Local wine and beer included along the way</li>
+      </ul>
+      <div class="price"><strong>Price:</strong> €120 per person</div>
+      <div class="book-button">
+        <a href="booking/bbooking.html" target="_blank">Book This Tour</a>
+      </div>
+      <div class="gallery">
+        <img src="../images/breakfast1.jpg" alt="Fresh croissant and coffee">
+        <img src="../images/breakfast2.jpg" alt="Eggs and toast at a Viennese café">
+        <img src="../images/Käsekrainer_foodtour.jpg" alt="Apfelstrudel with vanilla sauce">
+      </div>
+    </section>
+
+    <!-- Dinner Tour -->
+    <section class="section tour-section">
+      <h2>Dinner Tour</h2>
+      <p>Let us lead you through the Viennese cuisine with our dinner tour. You’ll experience:</p>
+      <ul>
+        <li><strong>Welcome treat:</strong> Punschkrapfen</li>
+        <li><strong>Main course:</strong> Schnitzel nach Wiener Art</li>
+        <li><strong>Bite:</strong> Käsekrainer</li>
+        <li><strong>Dessert:</strong> Apfelstrudel</li>
+        <li><strong>Beverages:</strong> Local beer and wine</li>
+      </ul>
+      <div class="price"><strong>Price:</strong> €120 per person</div>
+      <div class="book-button">
+        <a href="booking/bbooking.html" target="_blank">Book This Tour</a>
+      </div>
+      <div class="gallery">
+        <img src="../images/Schnitzel_foodtour.jpg" alt="Schnitzel">
+        <img src="../images/Käsekrainer_foodtour.jpg" alt="Käsekrainer">
+        <img src="../images/dinner2.jpg" alt="Apfelstrudel with vanilla sauce">
+      </div>
+    </section>
+
+    <!-- Private Tour -->
+    <section class="section tour-section">
+      <h2>Private Tour</h2>
+      <p>You’ll experience:</p>
+      <ul>
+        <li><strong>Welcome treat:</strong> Punschkrapfen</li>
+        <li><strong>Main course:</strong> Wiener Schnitzel</li>
+        <li><strong>Bite:</strong> Leberkäse</li>
+        <li><strong>Dessert:</strong> Kaiserschmarrn</li>
+        <li><strong>Goodbye treat:</strong> Wine tasting</li>
+        <li><strong>Beverages:</strong> Wine and Beer</li>
+      </ul>
+      <div class="price"><strong>Price:</strong> €300 for two people</div>
+      <div class="book-button">
+        <a href="booking/bbooking.html" target="_blank">Book This Tour</a>
+      </div>
+      <div class="gallery">
+        <img src="../images/breakfast1.jpg" alt="Fresh croissant and coffee">
+        <img src="../images/breakfast2.jpg" alt="Eggs and toast at a Viennese café">
+        <img src="../images/breakfast3.jpg" alt="Apfelstrudel with vanilla sauce">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kaiser Bites · All rights reserved · Vienna, Austria</p>
+  </footer>
+</body>
+</html>
