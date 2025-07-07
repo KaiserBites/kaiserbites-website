@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book Breakfast Tour – Kaiser Bites</title>
+  <title>Book Tour – Kaiser Bites</title>
   <style>
     body {
       font-family: Georgia, serif;
@@ -107,18 +107,18 @@ button:hover {
 <body>
 
   <header>
-    <h1>Book Your Breakfast Tour</h1>
+    <h1>Book Your Tour</h1>
   </header>
 
   <section class="section">
     <h2>Let’s Get You Booked!</h2>
     <p>
-      Use the form below to book your spot on our Breakfast Tour. <br />
+      Use the form below to book your spot on one of our Tours. <br />
       Please note:
     </p>
     <ul>
       <li>All bookings must be made at least <strong>24 hours in advance</strong>.</li>
-      <li>Each tour is limited to <strong>8 guests</strong>. For larger groups, please <a href="mailto:kaiserbitesvienna@gmail.com">contact us directly</a>.</li>
+      <li>Each tour is limited to <strong>12 guests</strong>. For larger groups, please <a href="mailto:kaiserbitesvienna@gmail.com">contact us directly</a>.</li>
       <li>Payment is required to confirm your spot – you'll be redirected to a secure checkout.</li>
     </ul>
     <a href="../index.html" class="back-link">← Back to Main Page</a>
@@ -129,15 +129,16 @@ button:hover {
       <label for="date">Select a date *</label><br />
       <input type="date" id="date" name="date" required /><br /><br />
   
-      <label for="time">Select time *</label><br />
+      <label for="time">Select tour *</label><br />
       <select id="time" name="time" required>
         <option value="10:00">Breakfast (10:00 AM)</option>
         <option value="14:00">Lunch (2:00 PM)</option>
         <option value="18:00">Dinner (6:00 PM)</option>
+        <option value="18:00">Private (6:00 PM)</option>
       </select><br /><br />
   
       <label for="people">Number of people *</label><br />
-      <input type="number" id="people" name="people" min="1" max="8" value="1" required /><br />
+      <input type="number" id="people" name="people" min="2" max="8" value="1" required /><br />
       <small>If you are booking for more than 8 people, please <a href="mailto:kaiserbitesvienna@gmail.com">contact us directly</a>.</small><br /><br />
   
       <button type="submit">Book Now</button>
