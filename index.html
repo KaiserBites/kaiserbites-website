@@ -135,47 +135,61 @@
   }
 
   .dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    background-color: #fdf6ec;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 0.5rem 0;
-    border-radius: 6px;
-    min-width: 200px;
-    z-index: 10;
-  }
-
-  .dropdown-content a {
-    display: block;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    color: #3a3a3a;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f3e6c3;
-    color: #d6b36a;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  @media (max-width: 600px) {
-    .dropdown-content a {
-      font-size: 0.95rem;
+      display: inline-block;
+      position: relative;
     }
-  }
-    
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      background-color: #fdf6ec;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 0.5rem 0;
+      border-radius: 6px;
+      min-width: 200px;
+      z-index: 10;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: #3a3a3a;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f3e6c3;
+      color: #d6b36a;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown-content {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #fdf6ec;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      padding: 0.5rem 0;
+      min-width: 200px;
+      z-index: 10;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-content {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -191,18 +205,26 @@
   <div class="hero"></div>
 
   <nav class="navbar">
-  <div class="dropdown">
-    <div class="menu-toggle">☰ Menu</div>
-    <div class="dropdown-content">
-      <a href="subpages/about.html">About Us</a>
-      <a href="subpages/book.html">Book a Tour</a>
-      <a href="subpages/recommendations.html">Our Recommendations</a>
-      <a href="subpages/blog.html">Blog</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Get in Touch</a>
+    <div class="dropdown">
+      <div class="menu-toggle">☰ Menu</div>
+      <div class="dropdown-content">
+        <a href="subpages/about.html">About Us</a>
+        <div class="sub-dropdown">
+          <a href="subpages/book.html">Book a Tour ▸</a>
+          <div class="sub-dropdown-content">
+            <a href="subpages/private.html">Private Tour</a>
+            <a href="subpages/breakfast.html">Breakfast Tour</a>
+            <a href="subpages/dinner.html">Dinner Tour</a>
+            <a href="subpages/streetfood.html">Street Food Tour</a>
+          </div>
+        </div>
+        <a href="subpages/recommendations.html">Our Recommendations</a>
+        <a href="subpages/blog.html">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   
   <section class="section">
     <h2>About Viennese Cuisine</h2>
