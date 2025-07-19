@@ -128,7 +128,12 @@ button:hover {
     <form>
       <label for="date">Select a date *</label><br />
       <input type="date" id="date" name="date" required /><br /><br />
-  
+
+      <input type="hidden" name="_next" value="payment-info.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New KaiserBites Booking!">
+      <input type="hidden" name="_autoresponse" value="Thanks for booking! We’ll get back to you shortly.">
+      
       <label for="time">Select tour *</label><br />
       <select id="time" name="time" required>
         <option value="10:00">Breakfast (10:00 AM)</option>
