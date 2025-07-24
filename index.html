@@ -217,11 +217,6 @@
     overflow: hidden;
   }
   
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 1rem;
-  }
   
   .carousel-track img {
     width: 250px;
@@ -254,6 +249,18 @@
   
   .carousel-btn.next {
     right: 0.5rem;
+  }
+
+  .carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;  /* 💥 THIS IS MISSING */
+  scroll-behavior: smooth; /* Optional, but nice */
+  scrollbar-width: none; /* optional: hide scrollbar in Firefox */
+  }
+
+  .carousel-track::-webkit-scrollbar {
+    display: none; /* optional: hide scrollbar in Chrome/Safari */
   }
     
   </style>
