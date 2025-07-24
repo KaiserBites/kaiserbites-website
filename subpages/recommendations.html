@@ -5,6 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Recommendations | KaiserBites</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #d4b483;
+      padding: 1em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3em 1em;
+      background: #f8f4ee;
+      border-bottom: 2px solid #d4b483;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .category {
+      padding: 2em 5vw;
+    }
+
+    .category h2 {
+      font-size: 2em;
+      border-left: 5px solid #d4b483;
+      padding-left: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 1em 1em 0.5em;
+      font-size: 1.3em;
+      color: #b77d38;
+    }
+
+    .card p {
+      margin: 0 1em 1em;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #d4b483;
+      text-align: center;
+      padding: 1em;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .category h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -28,17 +136,12 @@
         <div class="card">
           <img src="images/amerlingbeisl.jpg" alt="Gasthaus zur goldenen Gabel">
           <h3>Amerlingbeisl</h3>
-          <p>The Amerlingbeisl is tucked away in a 
-            beautiful inner courtyard of a historic Biedermeier 
-            house in the Spittelberg district. From the street, 
-            you'd never guess that behind the entrance lies one 
-            of Vienna's most idyllic Schanigärten (outdoor dining gardens), 
-            full of greenery and old-world flair. It’s especially popular in summer.</p>
+          <p>The Amerlingbeisl is tucked away in a beautiful inner courtyard... (rest unchanged)</p>
         </div>
         <div class="card">
           <img src="images/placeholder-restaurant2.jpg" alt="Trude's Küche">
           <h3>Neubauschenke</h3>
-          <p>The Neubauschenke is a cozy Viennese tavern that serves traditional home made Viennese dishes. Their infamous Apfelstrudel is freshly baked every day and is served warm from the oven.</p>
+          <p>The Neubauschenke is a cozy Viennese tavern that serves traditional home made Viennese dishes...</p>
         </div>
       </div>
     </section>
@@ -50,23 +153,12 @@
         <div class="card">
           <img src="images/leopold museum.jpg" alt="Uhrenmuseum">
           <h3>Leopold museum</h3>
-          <p>The Leopold Museum houses one of the world’s most important collections 
-            of Austrian modern art, featuring masterpieces by Egon Schiele, Gustav Klimt, 
-            and the Wiener Werkstätte. Its clean, modern architecture contrasts beautifully 
-            with the rich emotional depth of the art inside, making it a striking cultural experience. 
-            Schiele fans will find intimate, raw, and often provocative works that offer deep insight 
-            into Viennese expressionism and early 20th-century angst. Temporary exhibitions are often 
-            bold and well-curated, drawing connections between past and present. Located in the heart 
-            of the MuseumsQuartier, it’s a must-see for anyone wanting to understand Vienna’s artistic soul.</p>
+          <p>The Leopold Museum houses one of the world’s most important collections...</p>
         </div>
         <div class="card">
           <img src="images/placeholder-museum2.jpg" alt="Beisl-Kultur Galerie">
           <h3>Belvedere</h3>
-          <p>The Belvedere Museum offers not only world-class art but also stunning Baroque architecture 
-            and gardens with panoramic views of Vienna. It’s home to Gustav Klimt’s "The Kiss", one of the 
-            most iconic paintings in the world, alongside works by Schiele, Kokoschka, and French Impressionists. 
-            The museum spans centuries of Austrian art history, from medieval altarpieces to contemporary installations. 
-            Visiting the Belvedere is like stepping into a living piece of imperial and cultural history.</p>
+          <p>The Belvedere Museum offers not only world-class art but also stunning Baroque architecture...</p>
         </div>
       </div>
     </section>
@@ -78,18 +170,12 @@
         <div class="card">
           <img src="images/frau mayer.jpg" alt="Der Späte Vogel">
           <h3>Frau Mayer</h3>
-          <p>Frau Mayer offers a rare glimpse into Vienna’s alternative, artsy nightlife—far from the usual tourist bars. 
-            It’s a place where you can experience authentic local culture, hear live music up close, and even join in if you feel like it. 
-            If you want to meet Viennese creatives and enjoy a spontaneous, welcoming vibe, this is the perfect off-the-beaten-path spot.</p>
+          <p>Frau Mayer offers a rare glimpse into Vienna’s alternative, artsy nightlife...</p>
         </div>
         <div class="card">
           <img src="images/cafe schopenhauer.jpg" alt="Sissi Spritz">
           <h3>Café Schopenhauer</h3>
-          <p>Café Schopenhauer is a cozy, intellectual-style Viennese café in the quiet 18th district, perfect for escaping the tourist buzz. 
-            Named after the 19th-century philosopher Arthur Schopenhauer—famous for his famously gloomy outlook on life—the café itself is anything but depressing. 
-            With shelves full of books, old-school charm, friendly service, and a brunch menu that references great thinkers like Kant and Nietzsche, it feels like a warm hug for your brain. 
-            It’s a great place to enjoy coffee, think deep thoughts (or none at all), and soak up a slice of real Vienna.
-          </p>
+          <p>Café Schopenhauer is a cozy, intellectual-style Viennese café in the quiet 18th district...</p>
         </div>
       </div>
     </section>
